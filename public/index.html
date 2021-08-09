@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>서민석민석민서민석민서민석</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.9.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <!-- <script defer src="/__/firebase/8.9.0/firebase-auth.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.9.0/firebase-database.js"></script> -->
+    <script defer src="/__/firebase/8.9.0/firebase-firestore.js"></script>
+    <!-- <script defer src="/__/firebase/8.9.0/firebase-functions.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.9.0/firebase-messaging.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.9.0/firebase-storage.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.9.0/firebase-analytics.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.9.0/firebase-remote-config.js"></script> -->
+    <!-- <script defer src="/__/firebase/8.9.0/firebase-performance.js"></script> -->
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <style media="screen">
+    </style>
+    <style>
+      .span-class{
+        color:red;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="list" style="height:100vh; width:100vw; display:flex; justify-content: space-between; align-items: center;" />
+    <script>
+      var frag=document.createDocumentFragment()
+      for(var i=0;i<10;i++){
+        var item = document.createElement('span');
+        item.className="span-class"
+        item.textContent = i;
+        frag.appendChild(item)
+      }
+      document.getElementById('list').appendChild(frag)
+    </script>
+  </body>
+</html>
